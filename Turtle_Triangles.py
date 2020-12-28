@@ -8,6 +8,9 @@ Created on Sun Dec 27 14:50:29 2020
 import turtle
 from random import randint
 
+# ------------ Makes instant
+turtle.tracer(0, 0)
+
 # ----------- Setup ----------- #
 color_list = ['red','orange','yellow','green','blue','indigo','violet']
 length = 100  #triangle side length
@@ -102,10 +105,12 @@ def hexagon(arg1):
 for x in range(7):
     hexagon(x)  
     
-
+# ------------ Makes instant
+turtle.update()
 
 turtle.done()
 turtle.bye()
+
 
 try:
     turtle.bye()   
